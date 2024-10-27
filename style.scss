@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 3.125rem;
+    background-color: black;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn-gray {
+    border-radius: 5px;
+    width: 6rem;
+    border: 1px solid white;
+    background-color: #686868;
+    color: white;
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    width: 5rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+}
+
+/* Efeito hover para os botões */
+.btn-gray:hover,
+.btn-red:hover {
+    transform: translateY(-5px); /* Move o botão levemente para cima */
+    opacity: 0.7; /* Deixa o botão levemente transparente */
+}
+
+/* Efeito específico de cor para cada botão */
+.btn-gray:hover {
+    background-color: #505050; /* Muda a cor de fundo no hover */
+    color: #f0f0f0; /* Altera a cor do texto no hover */
+}
+
+.btn-red:hover {
+    background-color: #d90000; /* Muda a cor de fundo no hover */
+    color: #f0f0f0; /* Altera a cor do texto no hover */
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+.episode-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.episode {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.episode:hover {
+    transform: scale(1.05); /* Efeito de zoom leve no container */
+}
+
+.episode img {
+    width: 200px; /* largura fixa */
+    height: 150px; /* altura fixa */
+    object-fit: cover; /* ajusta a imagem para cobrir o contêiner sem distorção */
+    transition: transform 0.5s; /* Animação para o movimento */
+}
+
+
+.episode img:hover {
+    transform: translateY(-19px); /* Move a imagem para cima ao passar o mouse */
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 0.5rem 0;
+    transition: color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+/* Efeito de hover */
+footer li:hover {
+    color: #ff6347; /* Cor desejada ao passar o mouse, neste caso, um tom de laranja */
+}
